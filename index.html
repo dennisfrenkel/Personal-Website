@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Dennis Frenkel - Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /> <!-- Include Font Awesome -->
+    <style>
+        /* LinkedIn icon styles */
+        .header-linkedin .fa-linkedin {
+            color: rgb(248, 243, 243); /* LinkedIn blue color */
+            font-size: 1.5em; /* Adjust the size as needed */
+            margin-left: 10px; /* Space between name and icon */
+        }
+
+        .header-linkedin a {
+            text-decoration: none;
+        }
+
+        .header-linkedin a:hover .fa-linkedin {
+            color: rgb(93, 92, 92); /* Darker blue on hover */
+        }
+
+        /* Skills chart styles */
+        .skills-chart {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .skills-chart .skill-item {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skills-chart .skill-item:nth-child(even) {
+            background: #e0e0e0;
+        }
+
+        .skills-chart .skill-item i {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .skills-chart .skill-item p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+    <body class="is-preload">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="image avatar"><img src="images/linkedinpfp.jpeg" alt="Dennis Frenkel" /></a>
+                <h1>
+                    <strong>Dennis Frenkel</strong>
+                    <span class="header-linkedin">
+                        <a href="https://www.linkedin.com/in/dennis-frenkel-01a483217/" target="_blank">
+                            <i class="fab fa-linkedin"></i> <!-- LinkedIn icon -->
+                        </a>
+                    </span>
+                    <br>
+                </h1>
+            </div>
+        </header>   
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- One -->
+            <section id="one">
+                <header class="major">
+                    <h2>About Me</h2>
+                </header>
+                <p>Welcome! I am Dennis Frenkel, a computer science and economics student at Fordham University Lincoln Center.
+                    I am passionate about leveraging technology to better the world and create innovative solutions. I am driven by the potential of technology to solve complex problems and improve lives. Whether it's through developing efficient algorithms, enhancing cybersecurity measures, or optimizing data analytics, I am dedicated to making a positive impact through my work. Join me on this journey as I strive to merge technology with creativity.
+                </p>
+                <ul class="actions">
+                    <li><a href="#two" class="button">Recent Work</a></li>
+                    <li><a href="#" class="button" id="resumeButton">Resume</a></li>
+                </ul>
+            </section>
+
+            <!-- Skills Chart -->
+            <section id="skills-chart">
+                <h2>My Skills</h2>
+                <div class="skills-chart">
+                    <div class="skill-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <p>Technical Skills</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-robot"></i>
+                        <p>SWE Fellow at Headstarter AI</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-lock"></i>
+                        <p>Cybersecurity Enthusiast</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-chart-line"></i>
+                        <p>Data Analytics</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Two -->
+            <section id="two">
+                <h2>Recent Work</h2>
+                <div class="row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="Project 1" /></a>
+                        <h3>Analysis of Air Handling (AHU) Dataset For Energy Efficiency</h3>
+                        <p>Analyzed data for energy efficiency improvements. Completed in May 2026.</p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="Project 2" /></a>
+                        <h3>StrategiMinds</h3>
+                        <p>A dynamic number guessing game developed as a personal project.</p>
+                    </article>
+                </div>
+                <ul class="actions">
+                    <li><a href="#" class="button">Full Portfolio</a></li>
+                </ul>
+            </section>
+
+            <!-- Timeline Section -->
+            <section id="timeline">
+                <h2>Career Timeline</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 class="timeline-title" onclick="toggleDetails(this)">February 2024 - Present: IT Coordinator</h3>
+                            <div class="timeline-details">
+                                <p>The National Society of Leadership & Success (NSLS)</p>
+                                <ul>
+                                    <li>Engineer and maintain IT and AV systems for NSLS events, ensuring flawless execution and reducing technical downtimes by troubleshooting and system enhancements.</li>
+                                    <li>Direct and manage email infrastructure, creating and maintaining 100+ .edu accounts, optimizing member communication and accessibility, and increasing engagement.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 class="timeline-title" onclick="toggleDetails(this)">May - September 2023: Logistics Summer Intern</h3>
+                            <div class="timeline-details">
+                                <p>Bullion Exchanges, New York, NY</p>
+                                <ul>
+                                    <li>Implemented and maintained comprehensive company spreadsheets, tracking 1,000+ product listings and market trends, ensuring data accuracy through constant market research.</li>
+                                    <li>Utilized web scraping techniques to gather and analyze precious metals pricing data from 10+ online platforms, optimizing product listings with competitive pricing strategies and boosting sales revenue.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 class="timeline-title" onclick="toggleDetails(this)">January 2022 - Present: Analyst & Managing Technician</h3>
+                            <div class="timeline-details">
+                                <p>Vera I Pharmacy, New York, NY</p>
+                                <ul>
+                                    <li>Streamline data collection processes hourly, weekly, and monthly, facilitating detailed analysis, leading to 15% fewer stockouts and a 10% boost in monthly sales.</li>
+                                    <li>Extract and analyze PrimeRx data using SQL, identifying key trends in over 1000+ active patient profiles and prescriber behavior; implementing quality checks to ensure 100% compliance with regulatory standards.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 class="timeline-title" onclick="toggleDetails(this)">2019 - 2022: Computer LAB Assistant</h3>
+                            <div class="timeline-details">
+                                <p>Stephen A. Halsey, Computer LAB Assistant, New York, NY</p>
+                                <ul>
+                                    <li>Explained vital coding concepts, helped students learn basic programming skills, and assisted students with projects in Scratch and Wix.</li>
+                                    <li>Conducted guided coding tutorials with 25+ students per session, resolving technical issues and enhancing project quality, improving overall learning and coding proficiency.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    <!-- Three -->
+	<section id="three">
+		<h2>Get In Touch</h2>
+		<p>If you would like to reach out to me, feel free to send a message below.</p>
+		<div class="row">
+			<div class="col-8 col-12-small">
+				<form method="post" action="#">
+					<div class="row gtr-uniform gtr-50">
+						<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+						<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                        </div>
+                    </form>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" /></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-12-small">
+                    <ul class="labeled-icons">
+                        <li>
+                            <h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+                            New York, NY<br />
+                            United States
+                        </li>
+                        <li>
+                            <h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+                            (347)-842-5809
+                        </li>
+                        <li>
+                            <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+                            <a href="mailto:dennisfrenkel18@gmail.com">dennisfrenkel18@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+			
+
+        </div>
+		<script>
+			// Get the modal
+			var modal = document.getElementById("resumeModal");
+		
+			// Get the button that opens the modal
+			var btn = document.getElementById("resumeButton");
+		
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+		
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+				modal.style.display = "block";
+			}
+		
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+		
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
+		
+		<script>
+			function toggleDetails(element) {
+				const details = element.nextElementSibling;
+				if (details.style.display === "none" || details.style.display === "") {
+					details.style.display = "block";
+					element.classList.add("active");
+				} else {
+					details.style.display = "none";
+					element.classList.remove("active");
+				}
+			}
+			</script>
+
+    </body>
+</html>
