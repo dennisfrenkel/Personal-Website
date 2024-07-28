@@ -211,6 +211,60 @@
                 <iframe src="AHU_Data_Report.pdf" width="100%" height="500px"></iframe> <!-- Embed PDF in iframe -->
             </div>
         </div>
+		 <!-- Timeline Section -->
+		 <section id="timeline">
+			<h2>Career Timeline</h2>
+			<div class="timeline">
+				<div class="timeline-item">
+					<div class="timeline-content">
+						<h3 class="timeline-title" onclick="toggleDetails(this)">February 2024 - Present: IT Coordinator</h3>
+						<div class="timeline-details">
+							<p>The National Society of Leadership & Success (NSLS)</p>
+							<ul>
+								<li>Engineer and maintain IT and AV systems for NSLS events, ensuring flawless execution and reducing technical downtimes by troubleshooting and system enhancements.</li>
+								<li>Direct and manage email infrastructure, creating and maintaining 100+ .edu accounts, optimizing member communication and accessibility, and increasing engagement.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-content">
+						<h3 class="timeline-title" onclick="toggleDetails(this)">May - September 2023: Logistics Summer Intern</h3>
+						<div class="timeline-details">
+							<p>Bullion Exchanges, New York, NY</p>
+							<ul>
+								<li>Implemented and maintained comprehensive company spreadsheets, tracking 1,000+ product listings and market trends, ensuring data accuracy through constant market research.</li>
+								<li>Utilized web scraping techniques to gather and analyze precious metals pricing data from 10+ online platforms, optimizing product listings with competitive pricing strategies and boosting sales revenue.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-content">
+						<h3 class="timeline-title" onclick="toggleDetails(this)">January 2022 - Present: Analyst & Managing Technician</h3>
+						<div class="timeline-details">
+							<p>Vera I Pharmacy, New York, NY</p>
+							<ul>
+								<li>Streamline data collection processes hourly, weekly, and monthly, facilitating detailed analysis, leading to 15% fewer stockouts and a 10% boost in monthly sales.</li>
+								<li>Extract and analyze PrimeRx data using SQL, identifying key trends in over 1000+ active patient profiles and prescriber behavior; implementing quality checks to ensure 100% compliance with regulatory standards.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-content">
+						<h3 class="timeline-title" onclick="toggleDetails(this)">2019 - 2022: Computer LAB Assistant</h3>
+						<div class="timeline-details">
+							<p>Stephen A. Halsey, Computer LAB Assistant, New York, NY</p>
+							<ul>
+								<li>Explained vital coding concepts, helped students learn basic programming skills, and assisted students with projects in Scratch and Wix.</li>
+								<li>Conducted guided coding tutorials with 25+ students per session, resolving technical issues and enhancing project quality, improving overall learning and coding proficiency.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
         <!-- Modal for Resume -->
         <div id="resumeModal" class="modal">
@@ -303,6 +357,18 @@
                 details.style.display = details.style.display === 'block' ? 'none' : 'block';
             });
         });
+		// Toggle Timeline Details
+        function toggleDetails(element) {
+            const details = element.nextElementSibling;
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                element.classList.add("active");
+            } else {
+                details.style.display = "none";
+                element.classList.remove("active");
+            }
+        }
+    </script>
     </script>
 
 </body>
